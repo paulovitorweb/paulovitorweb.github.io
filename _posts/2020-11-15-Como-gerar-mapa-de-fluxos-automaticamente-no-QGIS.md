@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Como gerar mapa de fluxos automaticamente no QGIS"
+image: https://paulovitorweb.files.wordpress.com/2020/11/flow-maps-qgis3-thumbnail.png?w=698
 categories: [SIG, QGIS]
 tags: [sig, qgis, camada virtual, sql, geotecnologias]
 ---

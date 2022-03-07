@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SQL espacial e otimização: ligando pontos a linhas pela proximidade"
+image: https://paulovitorweb.files.wordpress.com/2022/02/spatial-sql-paulovitorweb.gif?w=424
 categories: [Banco de dados, PostGIS]
 tags: [banco de dados, postgresql, postgis, geotecnologias]
 ---
