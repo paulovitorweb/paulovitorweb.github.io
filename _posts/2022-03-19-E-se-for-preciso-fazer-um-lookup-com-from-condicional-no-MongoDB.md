@@ -2,7 +2,7 @@
 layout: post
 title: "E se for preciso fazer um lookup com ‘from’ condicional no MongoDB?"
 img_path: /assets/img/
-image: /assets/img/mongodb-lookup-from-many-collection-to-same-field.png
+image: /assets/img/mongodb-lookup-from-two-collections-with-same-field.png
 categories: [Banco de dados, MongoDB]
 tags: [banco de dados, nosql, database, mongodb, mongo, lookup]
 ---
@@ -11,8 +11,8 @@ Essa semana precisei construir uma pipeline de agregação no MongoDB com um obj
 
 Pense num cenário onde um dado campo do documento armazena um ObjectId que pode ser uma referência a documentos de duas ou mais collections, como uma chave de entidade. Se for preciso buscar o documento dela, como fazer isso numa mesma pipeline e sem perder performance?
 
-![Diagrama UML mostrando relação many-to-many em que um campo da entidade poderia conter relação com uma ou outra entidade](mongodb-lookup-from-many-collection-to-same-field.png)
-_Uma relação many-to-many em que um campo da entidade poderia conter relação com uma ou outra entidade_
+![Diagrama UML mostrando relação one-to-many em que um campo da entidade poderia conter relação com uma ou outra entidade](mongodb-lookup-from-two-collections-with-same-field.png)
+_Uma relação one-to-many em que um campo da entidade poderia conter relação com uma ou outra entidade_
 
 Pensando em um banco relacional, provavelmente a melhor opção seria fazer duas seleções separadas, em que cada uma filtraria pelo valor do campo X correspondente e faria o join com a tabela correta, e depois uni-las com `UNION`. Mas, como seria o modo NoSQL de conseguir esse tipo de informação?
 
