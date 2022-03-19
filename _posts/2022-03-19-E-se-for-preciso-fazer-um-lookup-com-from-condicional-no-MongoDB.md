@@ -52,13 +52,9 @@ Então voltei a pensar em como resolveria isso usando SQL - dois selects e uma u
             'pipeline': [
                 {
                     '$match': {
-                        '$and': [
-                            {
-                                '$expr': {
-                                    '$eq': ['$_id', '$$idToLookup']
-                                }
-                            }
-                        ]
+                        '$expr': {
+                            '$eq': ['$_id', '$$idToLookup']
+                        }
                     }
                 },
                 {
@@ -80,13 +76,9 @@ Então voltei a pensar em como resolveria isso usando SQL - dois selects e uma u
             'pipeline': [
                 {
                     '$match': {
-                        '$and': [
-                            {
-                                '$expr': {
-                                    '$eq': ['$_id', '$$idToLookup']
-                                }
-                            }
-                        ]
+                        '$expr': {
+                            '$eq': ['$_id', '$$idToLookup']
+                        }
                     }
                 },
                 {
